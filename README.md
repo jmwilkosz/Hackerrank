@@ -9,4 +9,4 @@ Information
 | profile | [hackerrank.com/jmwilkosz1] |
 
 
-[hackerrank/jmwilkosz]: <https://www.hackerrank.com/jmwilkosz1>
+[hackerrank/jmwilkosz1]: <https://www.hackerrank.com/jmwilkosz1>
