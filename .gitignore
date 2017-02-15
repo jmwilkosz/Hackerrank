@@ -1,0 +1,7 @@
+# global
+**/.DS_Store
+**/.idea
+**/*.iml
+
+# Lib
+lib/**
