@@ -12,4 +12,7 @@
         <finalName>com.hackerrank</finalName>
     </build>
 
+    <dependencies>
+
+    </dependencies>
 </project>

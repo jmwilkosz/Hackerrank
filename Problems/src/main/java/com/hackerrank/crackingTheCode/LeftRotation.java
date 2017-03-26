@@ -1,6 +1,5 @@
 package com.hackerrank.crackingTheCode;
 
-import java.util.Scanner;
 
 /**
  * Created by mupp3t on 26/03/2017.
@@ -8,30 +7,28 @@ import java.util.Scanner;
 public class LeftRotation {
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
-        int k = in.nextInt();
-        int a[] = new int[n];
-        for(int a_i=0; a_i < n; a_i++){
-            a[a_i] = in.nextInt();
-        }
+        int k = 7;
+        int a[] = {98,67,35,1,74,79,7,26,54,63,24,17,32,81};
 
-        for(int i=0; i < k; i++){
-            LeftShiftArray(a);
-        }
+        a = LeftShiftArray(a,k);
 
         for(int i=0; i< a.length; i++){
             System.out.printf("%d ",a[i]);
         }
+
+        // 26 54 63 24 17 32 81 98 67 35 1 74 79 7
+
+        System.out.println();
     }
 
-    private static void LeftShiftArray(int[] a){
-        int tmp = a[0];
+    private static int[] LeftShiftArray(int[] a, int k){
+        int[] b = new int[a.length];
+        int shiftBy = k % a.length;// 1 <= shiftBy <= a.length;
 
-        for(int i = 0; i < a.length-1; i++){
-            a[i] = a[i+1];
+        for(int i = 0; i < b.length; i++){
+            b[i] = a[( i + shiftBy ) % b.length];
         }
 
-        a[a.length-1] = tmp;
+        return b;
     }
 }
