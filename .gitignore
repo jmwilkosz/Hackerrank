@@ -1,7 +1,4 @@
-# global
-**/.DS_Store
 **/.idea
 **/*.iml
-
-# Lib
-lib/**
+**/target
+**/.DS_Store
